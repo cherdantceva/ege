@@ -13,7 +13,12 @@
       flex: 0 0 20.7%
       max-width: 20.7%
 
-@media screen and (min-width: 990px)
+@media screen and (max-width: 1280px)
+  .head__slogan
+    font-size: 1.5vw
+
+
+@media screen and (min-width: 991px)
   .catalog
     .about-company
       flex: 0 0 36.4%
@@ -57,22 +62,25 @@
       transition: background-color 0.5s ease
 
 
-
-
-
-@media screen and (max-width: 990px)
-  .search
-    margin-left: 25%
+@media screen and (max-width: 991px)
+  .head
+    font-size: 1.8rem
+  .head__slogan
+    display: none
+  .head__logo
+    img
+      width: 70%
   .big-title
     font-size: 3rem
   .header-front__text
     font-size: 1.8rem
+  .screen-courses
+    position: static
+    margin: 0 auto
   .photo-company
     text-align: center
   .title-courses
     font-size: 2.8rem
-  .screen-courses
-    width: 320px
   .courses-address
     font-size: 1.8rem
   .info--map
@@ -80,19 +88,16 @@
   .courses-list__img-link
     margin-left: 0
     margin-top: 1rem
+  .main-info,
+  .courses-links
+    border-bottom: 1px solid #172b2e
+    border-right: none
+  .info--footer
+    text-align: center
 
 @media screen and (max-width: 767px)
   .head
-    .head__logo,
-    .head__slogan,
-    .head__search,
-    .head__phone-number
-      font-size: 1.8rem
-      padding-top: 2%
-      padding-left: 1.5rem
-      padding-right: 1.5rem
-    .search
-      margin-left: 40%
+    font-size: 1.6rem
   .opening-year
     font-size: 1.4rem
   .txt-company
@@ -101,7 +106,12 @@
     font-size: 2.8rem
 
 @media screen and (max-width: 576px)
+  .head
+    font-size: 1.4rem
   .screen-courses
-    width: 280px
-    top: 32%
-    height: 460px
+    width: 100%
+    max-width: 520px
+  .head__search
+    order: 1
+    border: none
+
